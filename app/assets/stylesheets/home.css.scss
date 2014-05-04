@@ -2,18 +2,3 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-background-image: url(/assets/bg.jpg);
-background-repeat:no-repeat;
-background-position:right top;
-}
-
-li
-{
-display:inline;
-}
-
-a:link {color:white;}      /* unvisited link */
-a:visited {color:#252525;}  /* visited link */
-a:hover {color:#000019;}  /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */

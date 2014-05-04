@@ -13,7 +13,84 @@
 
   <body>
 
+
+<div class="contain-to-grid sticky">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Phil Jun</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-form">
+      <div class="row collapse">
+      <div class="large-8 small-9 columns">
+      <input type="text" placeholder="Find Stuff">
+      </div>
+      <div class="large-4 small-3 columns">
+      <a href="#" class="alert button expand">Search</a>
+      </div>
+      </div>
+      </li>
+
+        <li class="has-dropdown">
+          <a href="#">Right Button Dropdown</a>
+          <ul class="dropdown">
+            <li><a href="#">Click for more</a></li>
+          </ul>
+        </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+<!--     <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul> -->
+  </section>
+</nav>
+
+</div>
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="../assets/img/examples/andromeda-orbit.jpg" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="../assets/img/IMG_2866.jpg" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+
     <%= yield %>
+
+    <div class="pagination-centered">
+  <ul class="pagination">
+    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+    <li class="current"><a href="">1</a></li>
+    <li><a href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">4</a></li>
+    <li class="unavailable"><a href="">&hellip;</a></li>
+    <li><a href="">10</a></li>
+    <li class="arrow"><a href="">&raquo;</a></li>
+  </ul>
+</div>
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
