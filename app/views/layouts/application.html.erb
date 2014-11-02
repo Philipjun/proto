@@ -4,93 +4,163 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title>Knight the 50k MINI</title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    "lightSlider" %>
+    <script src="/app/assets/javascripts/lightSlider.js"></script>
   </head>
 
   <body>
 
 
-<div class="contain-to-grid sticky">
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">Phil Jun</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="has-form">
-      <div class="row collapse">
-      <div class="large-8 small-9 columns">
-      <input type="text" placeholder="Find Stuff">
-      </div>
-      <div class="large-4 small-3 columns">
-      <a href="#" class="alert button expand">Search</a>
-      </div>
-      </div>
-      </li>
-
-        <li class="has-dropdown">
-          <a href="#">Right Button Dropdown</a>
-          <ul class="dropdown">
-            <li><a href="#">Click for more</a></li>
-          </ul>
-        </li>
-    </ul>
-
-    <!-- Left Nav Section -->
-<!--     <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-    </ul> -->
-  </section>
-</nav>
-
-</div>
-
-<ul class="example-orbit" data-orbit>
-  <li>
-    <img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
+<div class="mini-body">
+  <div class="row">
+    <div class="large-12-columns">
+    <div class="mini-top-banner">
+      <img src="/assets/mini-top-banner.jpg" class="mmd" alt="banner">
+      <img src="/assets/mini-top-mobile.jpg" class="mmv" alt="banner">
     </div>
-  </li>
-  <li class="active">
-    <img src="../assets/img/examples/andromeda-orbit.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
+    <div class="mini-banner-text">
+      <p>
+      We took to the streets with our trusty squire and noble steed, to drum up support for our cause, to knight His Fastness, the 50,000th MINI in Canada by Her Majesty, The Queen.
+      <br/>
+      Pledge your support towards our valiant quest in the form below or through Facebook and Twitter via #KNIGHTTHE50KMINI. And together we can make a legend that will be told for years to come!
+      </p>
+      <div class="saga">
+        <img src="/assets/MINI-saga.jpg" alt="saga">
+      </div>
+      <div class="flex-video">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/VwzsQggVoXs" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-  </li>
-  <li>
-    <img src="../assets/img/IMG_2866.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
+    <div class="talk-row">
+      <div class="talk">
+        <div class="small-12 columns medium-7 columns">
+          <img src="/assets/MINI-talk.jpg" class="mmd" alt="talk">
+          <img src="/assets/Slice-talk.jpg" class="mmv" alt="talk">
+          <div class="mini-post">
+            <img src="/assets/MINI-randompost.jpg" class="mini-random-post">
+          </div>
+        </div>
+      </div>
+
+      <div class="pledge">
+        <div class="small-12 columns medium-5 columns">
+          <img src="/assets/MINI-pledge.jpg" class="mmd" alt="pledge">
+          <img src="/assets/Slice-pledge.jpg" class="mmv" alt="pledge">
+          <div class="mini-contact">
+            <img src="/assets/MINI-contact.jpg" class="mini-contact-form" alt="contact">
+            <img src="/assets/Slice-contact.jpg" class="mmv" alt="contact">
+          </div>
+        </div>
+      </div>
     </div>
-  </li>
-</ul>
+    <div class="row">
+      <div class="mini-gallery">
+        <img src="/assets/MINI-gallery.jpg" class="mmd" alt="gallery">
+        <img src="/assets/Slice-gallery.jpg" class="mmv" alt="gallery">
+      </div>
+      <div class="lSSlideOuter ">
+        <div class="lSSlideWrapper">
+        <ul id="lightSlider">
+              <li data-thumb="/assets/tb1.jpg"> <img src="/assets/pic-1.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb2.jpg">
+              <img src="/assets/pic-2.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb3.jpg">
+              <img src="/assets/pic-3.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb4.jpg">
+              <img src="/assets/pic-4.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb5.jpg">
+              <img src="/assets/pic-5.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb6.jpg">
+              <img src="/assets/pic-6.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb7.jpg">
+              <img src="/assets/pic-7.jpg" alt="image01">
+          </li>
+          <li data-thumb="/assets/tb8.jpg">
+              <img src="/assets/pic-8.jpg" alt="image01">
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    </div> 
+  </div>  
+</div> 
 
-    <%= yield %>
+</body>
 
-    <div class="pagination-centered">
-  <ul class="pagination">
-    <li class="arrow unavailable"><a href="">&laquo;</a></li>
-    <li class="current"><a href="">1</a></li>
-    <li><a href="">2</a></li>
-    <li><a href="">3</a></li>
-    <li><a href="">4</a></li>
-    <li class="unavailable"><a href="">&hellip;</a></li>
-    <li><a href="">10</a></li>
-    <li class="arrow"><a href="">&raquo;</a></li>
-  </ul>
-</div>
+
+</html>
+
+
 
     <%= javascript_include_tag "application" %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#lightSlider").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 0,
+ 
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        easing: 'linear', //'for jquery animation',////
+ 
+        speed: 400, //ms'
+        auto: false,
+        loop: false,
+        slideEndAnimatoin: true,
+        pause: 2000,
+ 
+        keyPress: false,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',
+ 
+        rtl:false,
+        adaptiveHeight:false,
+ 
+        vertical:false,
+        verticalHeight:500,
+        vThumbWidth:100,
+ 
+        thumbItem:8,
+        pager: true,
+        gallery: true,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+ 
+        enableTouch:false,
+        enableDrag:false,
+        freeMove:true,
+        swipeThreshold: 40,
+ 
+        responsive : [],
+ 
+        onBeforeStart: function (el) {},
+        onSliderLoad: function (el) {},
+        onBeforeSlide: function (el) {},
+        onAfterSlide: function (el) {},
+        onBeforeNextSlide: function (el) {},
+        onBeforePrevSlide: function (el) {}
+    });
+});
+</script>
+
   </body>
 </html>
