@@ -1,6 +1,11 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: arial;
+  color: white;
+}
+
 .mini-body{
   background: #000;
 }
@@ -9,6 +14,20 @@
   display: none;
 }
 
+textarea.mini-area{
+  resize: none;
+  min-height: 150px;
+}
+
+#right-label{
+  margin-bottom: 5px;
+}
+
+.mini-contact > p{
+  font-size: 12px;
+  margin-top: 1em;
+
+}
 
 .saga{
   width: 64%;
