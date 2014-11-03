@@ -16,7 +16,7 @@ body {
 
 .ast{
   position: absolute;
-  right: -5px;
+  right: 0px;
 }
 
 textarea.mini-area{
@@ -146,6 +146,14 @@ input.mini-input{
     display: none; 
   }
 
+  .pr{
+    padding-right: 5px;
+  }
+
+  .lSSlideOuter {
+    margin-right: 15px;
+  }
+
   .mini-submit{
     margin-bottom: 62px;
     width: 113px;
@@ -153,7 +161,7 @@ input.mini-input{
 
   .mini-contact{
     padding-left: 10px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .mini-gallery{
