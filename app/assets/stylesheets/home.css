@@ -38,6 +38,10 @@ input.mini-input{
   margin-bottom: 5px;
 }
 
+.mini-contact{
+  margin-top: 2em;
+}
+
 .saga{
   width: 64%;
   margin: 0 auto;
@@ -58,7 +62,7 @@ input.mini-input{
 }
 
 .mini-post{
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .talk-row{
@@ -115,7 +119,7 @@ input.mini-input{
 .mini-gallery{
   width: 73%;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .mini-text-spacer > p{
