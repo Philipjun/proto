@@ -16,7 +16,7 @@ body {
 
 .ast{
   position: absolute;
-  right: 0px;
+  right: -5px;
 }
 
 textarea.mini-area{
@@ -133,6 +133,11 @@ input.mini-input{
   .mmv{
     display: block;
   }    
+
+  .ast{
+    position: absolute;
+    right: 0px;
+  }
 
   .mmd{
     display: none;
