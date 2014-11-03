@@ -16,7 +16,7 @@ body {
 
 textarea.mini-area{
   resize: none;
-  min-height: 150px;
+  min-height: 294px;
 }
 
 .right-label{
@@ -27,7 +27,10 @@ textarea.mini-area{
   font-size: 12px;
   margin-top: 1em;
   color: white;
+}
 
+input.mini-input{
+  margin-bottom: 5px;
 }
 
 .saga{
@@ -63,9 +66,12 @@ textarea.mini-area{
   position: relative;
 }
 
+.mini-submit{
+  float: right;
+}
 
 .mini-random-post{
-  height: 439px;
+  height: 640px;
 }
 
 .mini-contact-form{
@@ -134,8 +140,17 @@ textarea.mini-area{
     display: none;
   }
 
+  .mini-random-post{
+    height: auto;
+  }
+
   .mini-contact-form{
     display: none; 
+  }
+
+  .mini-submit{
+    margin-bottom: 62px;
+    width: 113px;
   }
 
   .mini-contact{
@@ -147,9 +162,6 @@ textarea.mini-area{
     width: 93%;
   }
 
-  input.mini-input{
-    margin-bottom: 5px;
-  }
 
   .mini-text-spacer > p{
     font-size: 12px;
@@ -157,6 +169,7 @@ textarea.mini-area{
     margin-top: -2em;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 72px;
   }
 
   .mini-banner-text > p{
@@ -164,12 +177,20 @@ textarea.mini-area{
   }
 
   .saga{
-    width: 100%
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .talk-row{
     padding-left: 0px;
     padding-right: 0px
+  }
+
+  ul.lSPager.lSGallery{
+    width: 200px;
+    margin-top: -20em;
+    margin-left: auto;
+    margin-right: auto
   }
 
 }
